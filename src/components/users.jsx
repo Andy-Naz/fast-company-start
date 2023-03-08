@@ -42,7 +42,7 @@ const Users = () => {
                         //с этого места вылезает ошибка, не могу отловить
                         //Warning: Each child in a list should have a unique "key" prop.
                         //вроде бы везде прописаны уникальные key
-                        
+                        //даже если оставить map пустым, все равно выдает ошибку, в общем нужен хелп
                         <tr>
                             <td key={user.name}>{user.name}</td>
                             <td>
