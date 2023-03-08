@@ -9,7 +9,7 @@ const Users = () => {
     }
     const renderPhrase = (number) => {
         return number <= 4 && number > 1
-            ? number + " человека тусанет с тобой сегодня"
+            ? number + " человека тусанут с тобой сегодня"
             : number + " человек тусанет с тобой сегодня"
     }
 
