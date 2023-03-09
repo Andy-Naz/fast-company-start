@@ -10,7 +10,6 @@ const Users = () => {
     const renderPhrase = (number) => {
         let classes = "badge fs-4 bg-"
         number === 0 ? (classes += "danger") : (classes += "primary")
-
         return (
             <span className={classes}>
                 {number === 0
