@@ -9,8 +9,8 @@ const Users = () => {
     }
     const renderPhrase = (number) => {
         let classes = "badge fs-4 bg-"
-        number === 0 ? classes += "danger" : classes += "primary"
-        
+        number === 0 ? (classes += "danger") : (classes += "primary")
+
         return (
             <span className={classes}>
                 {number === 0
@@ -46,7 +46,9 @@ const Users = () => {
                             <td>{user.name}</td>
                             <td>
                                 {user.qualities.map((quality) => (
-                                    <span key={quality._id} className={"badge bg-" + quality.color + " me-2"}>{quality.name}</span>
+                                    <span key={quality._id} className={"badge bg-" + quality.color + " me-2"}>
+                                        {quality.name}
+                                    </span>
                                 ))}
                             </td>
                             <td>{user.profession.name}</td>
